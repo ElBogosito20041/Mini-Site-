@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Galaxy Map</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      color: white;
+      text-align: center;
+    }
+    h1 {
+      margin: 20px 0;
+      font-size: 3em;
+    }
+    .map-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+      padding: 20px;
+    }
+    .map-container img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div style="position: fixed; top: 20px; left: 20px; z-index: 100;">
+    <a href="index.html" style="
+      font-family: 'Orbitron', sans-serif;
+      background-color: transparent;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-weight: normal;
+      transition: background-color 0.3s, color 0.3s;
+      display: inline-block;
+    " onmouseover="this.style.backgroundColor='white'; this.style.color='black'" onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+      Back to Home
+    </a>
+  </div>
+
+
+  <header>
+    <h1>GALAXY MAP</h1>
+  </header>
+  <div class="map-container">
+    <img src="star_wars_galaxy_map.jpeg" alt="Star Wars Galaxy Map">
+  </div>
+</body>
+</html>

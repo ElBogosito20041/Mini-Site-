@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Star Wars Fan Page</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+
+</head>
+
+<button id="scrollTopBtn" title="Back to top">
+  <img src="https://autocollant-sticker.com/931-thickbox_default/fleche-haut.jpg" alt="Top" style="width:24px;" />
+</button>
+
+
+<body>
+<div class="stars"></div>
+<header>
+  <div class="top-bar">
+    <div class="icons">
+      <a href="https://www.tiktok.com/@starwars"><img src="https://img.icons8.com/ios7/600/FFFFFF/tiktok.png" alt="TikTok" class="icon" /></a>
+      <a href="https://x.com/starwars"><img src="https://img.icons8.com/ios7/512/FFFFFF/twitterx.png" alt="X" class="icon" /></a>
+      <a href="https://www.instagram.com/starwars/"><img src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png" alt="Instagram" class="icon" /></a>
+      <a href="https://www.facebook.com/StarWars.fr/?brand_redir=169299103121699#"><img src="https://img.icons8.com/ios7/600/FFFFFF/facebook-new.png" alt="Facebook" class="icon" /></a>
+      <a href="https://www.youtube.com/user/starwars"><img src="https://img.icons8.com/ios7/512/FFFFFF/youtube-play.png" alt="YouTube" class="icon" /></a>
+    </div>
+    <div class="actions">
+      
+<span id="search-toggle" class="search-action">
+  <img src="https://img.icons8.com/ios-glyphs/20/ffffff/search--v1.png" class="icon" alt="search">
+  SEARCH
+</span>
+<input type="text" id="search-bar" placeholder="Search Star Wars...">
+<ul id="search-results" class="search-results"></ul>
+
+      <span><img src="https://img.icons8.com/ios-glyphs/20/ffffff/user--v1.png" class="icon" alt="login"> LOG IN</span>
+    </div>
+  </div>
+
+  <img src="logo.png" alt="Star Wars Logo" class="logo" />
+
+  <div class="menu-toggle">&#9776;</div>
+  <nav>
+    <ul>
+      <li><a href="news.html">NEWS + FEATURES</a></li>
+      <li><a href="video.html">VIDEO</a></li>
+      <li><a href="#films-section" id="films-link">FILMS</a></li>
+      <li class="dropdown">
+        <a href="series.html">SÉRIES</a>
+        <ul class="submenu">
+          <li><a href="#">Ahsoka</a></li>
+          <li><a href="#">The Mandalorian</a></li>
+          <li><a href="#">Andors</a></li>
+        </ul>
+      </li>
+      <li><a href="games.html">GAMES + INTERACTIVE</a></li>
+      <li class="dropdown">
+  <a href="databank.html">DATABANK</a>
+  <ul class="submenu">
+    <li><a href="galaxy-map.html">Galaxy Map</a></li>
+  </ul>
+</li>
+      <li><a href="https://www.disneyplus.com" target="_blank">DISNEY+</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="carousel">
+    <div class="carousel-images">
+      <div class="slide">
+        <img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/285f0165-9b46-4fc7-a701-05ef59216016/compose?aspectRatio=1.78&format=webp&width=1200" alt="Image 1" />
+        <div class="slide-overlay">
+          <a href="https://www.youtube.com/watch?v=-4DL9P_Pwhw" class="cta-yellow">WATCH NOW</a>
+        </div>
+      </div>
+      <div class="slide"><img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/5ba7e619-d209-4cf3-81f5-fabe9b94f3d4/compose?aspectRatio=1.78&format=webp&width=1200" alt="Image 2" /></div>
+      <div class="slide"><img src="https://cdn.kulturegeek.fr/wp-content/uploads/2025/02/Star-Wars-3-La-Revanche-des-Sith-Affiche-20-Ans.jpg" alt="Image 3" /></div>
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+  <section class="films-section" id="films-section">
+  <h2 class="films-title">Browse Films</h2>
+  <div class="films-controls">
+    <button id="sort-btn">📅 Release date</button>
+  </div>
+  <div class="films-grid" id="films-grid"></div>
+</section>
+
+</main>
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
