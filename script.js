@@ -210,3 +210,13 @@ searchResults.addEventListener("click", (e) => {
     }
   }
 });
+
+
+const floatingToggle = document.querySelector('.floating-menu-toggle');
+const navList = document.querySelector('nav ul');
+
+if (floatingToggle && navList) {
+  floatingToggle.addEventListener('click', () => {
+    navList.classList.toggle('show');
+  });
+}
